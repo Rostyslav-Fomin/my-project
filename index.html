@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,17 +22,16 @@
   <body>
     <!-- Шапка-герой -->
     <header class="page-header">
-      <div class="container page-header__container">
+      <div class="container hero-header__container">
         <a
           class="logo page-header__logo"
           href="./index.html"
-          aria-label="Логотип сайту Ice cream"
-          >
+          aria-label="Logo Ice cream"
+        >
           <svg>
             <use></use>
           </svg>
-          </a
-        >
+        </a>
         <div
           class="page-header__menu mobile-menu js-menu-container"
           id="mobile-menu"
@@ -40,79 +39,20 @@
           <nav class="nav">
             <ul class="nav-list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./index.html"
-                  >Студія</a
-                >
+                <a class="nav__link" href="./index.html">Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                <a class="nav__link" href="#about">How it’s made?</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#contacts">Контакти</a>
+                <a class="nav__link" href="#products">Our products</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
-          <ul class="contacts list">
-            <li class="contacts__item">
-              <a class="contacts__link link" href="mailto:info@devstudio.com"
-                ><svg class="contacts__icon" width="16" height="12">
-                  <use href="./img/sprite-header-icons.svg#envelope"></use>
-                </svg>
-                <span>info@devstudio.com</span></a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link link" href="tel:+380961111111"
-                ><svg class="contacts__icon" width="10" height="16">
-                  <use
-                    href="./img/sprite-header-icons.svg#smartphone"
-                  ></use></svg
-                ><span>+38 096 111 11 11</span></a
-              >
-            </li>
-          </ul>
-          <ul class="header-social__list list">
-            <li class="header-social__item">
-              <a
-                href="https://www.instagram.com/"
-                class="header-social__link"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="icon Instagram"
-                >Instagram<span class="header-social__separator">|</span></a
-              >
-            </li>
-            <li class="header-social__item">
-              <a
-                href="https://twitter.com/"
-                class="header-social__link"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="icon Twitter"
-                >Twitter<span class="header-social__separator">|</span></a
-              >
-            </li>
-            <li class="header-social__item">
-              <a
-                href="https://uk-ua.facebook.com/"
-                class="header-social__link"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="icon Facebook"
-                >Facebook<span class="header-social__separator">|</span></a
-              >
-            </li>
-            <li class="header-social__item">
-              <a
-                href="https://ua.linkedin.com/"
-                class="header-social__link"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="icon Linkedin"
-                >Linkedin</a
-              >
-            </li>
-          </ul>
+
           <button
             class="page-header__button page-header__button--close js-close-menu"
             type="button"
@@ -144,98 +84,96 @@
         </button>
       </div>
     </header>
-          <!-- Блок-герой -->
-      <section class="hero">
-        <div class="container">
-          <h1 class="tittle">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button" data-modal-open>
-            Замовити послугу
-          </button>
-          <div class="backdrop js-is-hidden" data-modal>
-            <div class="modal">
-              <form class="form" method="post">
-                <b class="form__title"
-                  >Залиште свої дані, ми вам передзвонимо</b
-                >
-                <div class="form__item">
-                  <label class="form__label" for="user-name">Ім'я</label>
+    <!-- Блок-герой -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="tittle">ice cream made with passion</h1>
+        <button class="button" type="button" data-modal-open>
+          Замовити послугу
+        </button>
+        <div class="backdrop js-is-hidden" data-modal>
+          <div class="modal">
+            <form class="form" method="post">
+              <b class="form__title">Залиште свої дані, ми вам передзвонимо</b>
+              <div class="form__item">
+                <label class="form__label" for="user-name">Ім'я</label>
 
-                  <input
-                    class="form__input"
-                    type="text"
-                    id="user-name"
-                    name="username"
-                    required
-                  />
-                  <svg class="form__image" width="18" height="18">
-                    <use href="./img/sprite.svg#user"></use>
-                  </svg>
-                </div>
-                <div class="form__item">
-                  <label class="form__label" for="user-tel">Телефон</label>
-                  <input
-                    class="form__input"
-                    type="tel"
-                    id="user-tel"
-                    name="tel"
-                    required
-                  />
-                  <svg class="form__image" width="18" height="18">
-                    <use href="./img/sprite.svg#phone"></use>
-                  </svg>
-                </div>
-                <div class="form__item">
-                  <label class="form__label" for="user-email">Пошта</label>
-                  <input
-                    class="form__input"
-                    type="email"
-                    id="user-email"
-                    name="mail"
-                  />
-                  <svg class="form__image" width="18" height="18">
-                    <use href="./img/sprite.svg#email"></use>
-                  </svg>
-                </div>
-                <div class="form__item form__text-block">
-                  <label class="form__label" for="user-comment">Коментар</label>
-                  <textarea
-                    class="form__textarea"
-                    id="user-comment"
-                    rows="10"
-                    name="comment"
-                    placeholder="Введіть текст"
-                  ></textarea>
-                </div>
-                <div class="form__policy">
-                  <input
-                    class="form__policy-input visually-hidden"
-                    type="checkbox"
-                    id="policy"
-                    name="policy"
-                  />
-                  <span class="form__checkbox"
-                    ><svg class="form__policy-image" width="16" height="15">
-                      <use href="./img/sprite.svg#check"></use></svg
-                  ></span>
-                  <label class="form__label form__checkbox-label" for="policy"
-                    >Погоджуюся з розсилкою та приймаю<a
-                      class="form__link"
-                      href="#"
-                      >Умови договору</a
-                    ></label
-                  >
-                </div>
-                <button class="form__button" type="submit">Відправити</button>
-              </form>
-              <button class="modal__button" type="button" data-modal-close>
-                <svg class="modal__icon" width="18" height="18">
-                  <use href="./img/sprite.svg#close"></use>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="user-name"
+                  name="username"
+                  required
+                />
+                <svg class="form__image" width="18" height="18">
+                  <use href="./img/sprite.svg#user"></use>
                 </svg>
-              </button>
-            </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="user-tel">Телефон</label>
+                <input
+                  class="form__input"
+                  type="tel"
+                  id="user-tel"
+                  name="tel"
+                  required
+                />
+                <svg class="form__image" width="18" height="18">
+                  <use href="./img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="user-email">Пошта</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="user-email"
+                  name="mail"
+                />
+                <svg class="form__image" width="18" height="18">
+                  <use href="./img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="form__item form__text-block">
+                <label class="form__label" for="user-comment">Коментар</label>
+                <textarea
+                  class="form__textarea"
+                  id="user-comment"
+                  rows="10"
+                  name="comment"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+              <div class="form__policy">
+                <input
+                  class="form__policy-input visually-hidden"
+                  type="checkbox"
+                  id="policy"
+                  name="policy"
+                />
+                <span class="form__checkbox"
+                  ><svg class="form__policy-image" width="16" height="15">
+                    <use href="./img/sprite.svg#check"></use></svg
+                ></span>
+                <label class="form__label form__checkbox-label" for="policy"
+                  >Погоджуюся з розсилкою та приймаю<a
+                    class="form__link"
+                    href="#"
+                    >Умови договору</a
+                  ></label
+                >
+              </div>
+              <button class="form__button" type="submit">Відправити</button>
+            </form>
+            <button class="modal__button" type="button" data-modal-close>
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./img/sprite.svg#close"></use>
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!--Головний блок-->
 
