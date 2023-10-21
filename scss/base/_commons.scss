@@ -43,18 +43,100 @@ body {
   }
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 10px;
+
+  color: var(--text-color);
+  background-color: var(--accent-color);
+
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.28;
+
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1), color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+    &:focus {
+      background-color: var(--button-hover-color);
+      color: var(--text-color-white);
+    }
+        &:disabled {
+          background-color: var(--button-disabled-color);
+        }
+
+    &--transparent {
+      background-color: transparent;
+      border: 2px solid var(--accent-color);
+      transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1), color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:hover,
+      &:focus {
+          background-color: transparent;
+          border-color: var(--button-hover-color);
+        }
+        &:disabled {
+          background-color: transparent;
+          border-color: var(--button-disabled-color);
+        }
+                @media screen and (max-width: 1199px) {
+                  font-size: 12px;
+                }
+    }
+    &--underlined {
+      border: none;
+
+      background-color: transparent;
+      color: var(--accent-color);
+
+      line-height: 1.2;
+      text-decoration: underline;
+&:hover {
+        background-color: transparent;
+   color: var(--button-hover-color);
+  }
+    &:focus {
+      color: var(--text-color-white);
+    }
+      &:disabled {
+        background-color: transparent;
+          color: var(--button-disabled-color);
+        }
+                @media screen and (max-width: 1199px) {
+                  font-size: 12px;
+                }
+    }
+}
+.button__icon {
+  margin-left: 4px;
+  fill: currentColor;
+}
+
 .section {
-  
 }
 .section-uppertittle {
-  &--dark {}
-  
-    &--ligt {}
+  &--dark {
+  }
+
+  &--ligt {
+  }
 }
 
 .section-tittle {
 
-  &--dark {}
-  
-    &--ligt {}
+  &--dark {
+  }
+
+  &--ligt {
+  }
 }
