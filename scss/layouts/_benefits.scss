@@ -1,78 +1,66 @@
-/* Особливості */
+// /* Особливості */
+
 .benefits {
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
-  }
+  padding-bottom: 68px;
+
+  background-color: var(--background-color-main);
 }
+
 .benefits__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+    justify-content: center;
+    gap: 80px;
   }
 }
+
 .benefits__item {
-  
- 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-   max-width: 450px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-    @media screen and (min-width: 768px) {
-       width: 354px;
-      margin: 15px;
-    }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    margin-right: 15px;
-    &:last-child {
-        margin-right: 0;
-      }
-  }
+  &:not(:last-child) {
+  margin-bottom: 28px;
+}
 }
 
-.benefits__block {
+.benefits__icon-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
 
-  background-color: var(--background-color-2);
+  border-radius: 50%;
 
-  @media screen and (min-width: 1200px) {
-    min-width: 270px;
-  }
+  background-color: var(--accent-color);
+
+  margin-bottom: 16px;
 }
 
-.benefits__subtittle {
-  color: var(--main-black-color);
+.benefits__quantity {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
+  color: var(--main-text-color);
 
-  margin-bottom: 10px;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.2;
+letter-spacing: 1.44px;
+text-transform: uppercase;
 
-  padding-bottom: 0;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  margin-bottom: 16px;
 }
 
 .benefits__text {
-  color: var(--text-color);
+width: 230px;
+margin-right: auto;
+margin-left: auto;
 
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.42px;
+  color: var(--main-text-color);
+
+text-align: center;
+font-size: 12px;
+line-height: 2.04;
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hand-made high quality ice cream, order ice-cream online">
     <title>Ice cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -185,7 +186,7 @@
       <section class="products section">
         <div class="container">
           <p class="uppertittle uppertittle--dark">100% natural</p>
-          <h2 class="section-tittle">products</h2>
+          <h2 class="tittle">products</h2>
           <ul class="products__list list">
             <li class="products__item">
               <div class="products__block products__block--green">
@@ -197,7 +198,7 @@
                   Soft ice cream with a delicate taste. Made with milk, cream,
                   sugar and natural stabilizer
                 </p>
-                <button class="products__button" type="button">
+                <button class="products__button" type="button" aria-label="ice-cream order button">
                   <svg class="products__icon" width="40" height="16">
                     <use href="./img/sprite.svg#arrow-to-right"></use>
                   </svg>
@@ -216,7 +217,7 @@
                   ingredients without the use of preservatives and flavor
                   enhancers
                 </p>
-                <button class="products__button" type="button">
+                <button class="products__button" type="button" aria-label="ice-cream order button">
                   <svg class="products__icon" width="40" height="16">
                     <use href="./img/sprite.svg#arrow-to-right"></use>
                   </svg>
@@ -234,7 +235,7 @@
                   Sweet drinks based on milk and ice cream, supplemented with
                   syrups, fruits, berries and other sweets of your choice
                 </p>
-                <button class="products__button" type="button">
+                <button class="products__button" type="button" aria-label="ice-cream order button">
                   <svg class="products__icon" width="40" height="16">
                     <use href="./img/sprite.svg#arrow-to-right"></use>
                   </svg>
@@ -242,16 +243,13 @@
               </div>
             </li>
           </ul>
-
-          <div class="icon-block"></div>
-        </div>
       </section>
       <!-- Як це працює? -->
       <section class="about section">
         <div class="container">
-          <p class="uppertittle uppertittle--light">tradition and love</p>
-          <h2 class="tittle tittle--dark">how it’s made?</h2>
-          <div class="about__text-block">
+          <p class="about__uppertittle uppertittle uppertittle--light">tradition and love</p>
+          <h2 class="about__title tittle tittle--light">how it’s made?</h2>
+          <div class="about__block">
             <div class="about__decoration"></div>
             <div class="about__information">
               <p class="about__text">
@@ -268,30 +266,46 @@
               <p class="about__text">
                 This is enough to choose ice cream and coffee for any mood!
               </p>
-              <button class="about__button btn">Read more</button>
+              <button class="about__button button btn"><span class="butoon__label">Read more</span>
+          <svg class="button__icon" width="12" height="12">
+                    <use href="./img/sprite.svg#arrow"></use></svg
+                ></button>
             </div>
           </div>
-          <ul class="about__list list">
-            <li class="about__item">
-              <svg class="about__icon" width="36" height="36">
-                <use href="./img/sprite.svg#cow"></use>
-              </svg>
-            </li>
-            <li class="about__item">
-              <svg class="about__icon" width="36" height="36">
-                <use href="./img/sprite.svg#weight"></use>
-              </svg>
-            </li>
-            <li class="about__item">
-              <svg class="about__icon" width="36" height="36">
-                <use href="./img/sprite.svg#ice-cream"></use>
-              </svg>
-            </li>
-          </ul>
-
-          <div class="icon-block"></div>
         </div>
       </section>
+      <section class="benefits">
+        <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__icon-block">
+                <svg class="benefits__icon" width="36" height="36">
+                <use href="./img/sprite.svg#cow"></use>
+              </svg>
+              </div>
+              <b class="benefits__quantity">721</b>
+              <p class="benefits__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-block">
+                <svg class="benefits__icon" width="36" height="36">
+                <use href="./img/sprite.svg#weight"></use>
+              </svg>
+              </div>
+              <b class="benefits__quantity">16KG</b>
+              <p class="benefits__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-block">
+                <svg class="benefits__icon" width="36" height="36">
+                <use href="./img/sprite.svg#ice-cream"></use>
+              </svg>
+              </div>
+              <b class="benefits__quantity">84</b>
+              <p class="benefits__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+          </ul>
+      </section>
+      
       <!-- <section class="gallery section">
         <div class="container">
           <h2 class="section-tittle">Чим ми займаємося</h2>
@@ -516,7 +530,7 @@
       </div>
     </footer> -->
 
-    <ul class="socials-list list">
+    <!-- <ul class="socials-list list">
       <li class="socials__item">
         <a
           class="socials__link team__link"
@@ -553,7 +567,7 @@
             <use href="./img/sprite.svg#facebook"></use></svg
         ></a>
       </li>
-    </ul>
+    </ul> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

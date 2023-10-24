@@ -128,9 +128,6 @@ body {
   fill: currentColor;
 }
 
-.section {
-}
-
 .uppertittle {
   margin-bottom: 12px;
   
@@ -143,12 +140,12 @@ body {
       color: var(--text-color);
   }
 
-  &--ligt {
+  &--light {
     color: var(--main-text-color);
   }
 }
 
-.section-tittle {
+.tittle {
     text-align: center;
     font-family: var(--second-font);
     font-size: 30px;
@@ -159,7 +156,7 @@ body {
     color: var(--text-color);
   }
 
-  &--ligt {
+  &--light {
     color: var(--main-text-color);
   }
 
