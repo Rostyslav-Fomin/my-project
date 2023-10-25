@@ -1,9 +1,14 @@
 // /* Особливості */
 
 .benefits {
-  padding-bottom: 68px;
-
   background-color: var(--background-color-main);
+
+  @media screen and (max-width: 479px) {
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-bottom: 80px;
+  }
 }
 
 .benefits__list {
@@ -16,8 +21,13 @@
 
 .benefits__item {
   &:not(:last-child) {
-  margin-bottom: 28px;
-}
+    @media screen and (max-width: 479px) {
+      margin-bottom: 22px;
+    }
+    @media screen and (min-width: 480px) {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .benefits__icon-block {
@@ -33,7 +43,18 @@
 
   background-color: var(--accent-color);
 
-  margin-bottom: 16px;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 12px;
+
+  }
+  @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+
+  }
 }
 
 .benefits__quantity {
@@ -43,24 +64,52 @@
 
   color: var(--main-text-color);
 
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.2;
-letter-spacing: 1.44px;
-text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
 
-  margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+
+    font-size: 36px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    letter-spacing: 2.32px;
+  }
 }
 
 .benefits__text {
-width: 230px;
-margin-right: auto;
-margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--main-text-color);
 
-text-align: center;
-font-size: 12px;
-line-height: 2.04;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: 230px;
+    font-size: 12px;
+    line-height: 2.04;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 152px;
+    font-size: 14px;
+    line-height: 2.43;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    font-size: 16px;
+    line-height: 2.81;
+    letter-spacing: 0.32px;
+  }
 }
