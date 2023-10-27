@@ -1,6 +1,6 @@
 // /* Особливості */
 
-.benefits {
+.advantages {
   background-color: var(--background-color-main);
 
   @media screen and (max-width: 479px) {
@@ -11,7 +11,7 @@
   }
 }
 
-.benefits__list {
+.advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
   }
 }
 
-.benefits__item {
+.advantages__item {
   &:not(:last-child) {
     @media screen and (max-width: 479px) {
       margin-bottom: 22px;
@@ -30,7 +30,7 @@
   }
 }
 
-.benefits__icon-block {
+.advantages__icon-block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,16 +48,14 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 12px;
-
+    margin-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-
+    margin-bottom: 40px;
   }
 }
 
-.benefits__quantity {
+.advantages__quantity {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -88,7 +86,7 @@
   }
 }
 
-.benefits__text {
+.advantages__text {
   margin-right: auto;
   margin-left: auto;
 

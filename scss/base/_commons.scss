@@ -14,16 +14,21 @@ body {
   height: auto;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-gap);
-}
+// .grid {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: var(--card-gap);
+// }
 
-.grid-item {
-  flex-basis: calc(
-    (100% - var(--card-gap) * (var(--grid-items) - 1)) / var(--grid-items)
-  );
+// .grid-item {
+//   flex-basis: calc(
+//     (100% - var(--card-gap) * (var(--grid-items) - 1)) / var(--grid-items)
+//   );
+// }
+
+.grid {
+  display: grid;
+  
 }
 
 .container {
