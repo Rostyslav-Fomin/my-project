@@ -13,8 +13,8 @@
   --text-color-white: #ffffff;
   --second-text-color: #ababab;
   --footer-text-color: #7a7a7a;
-  --card-gap: 30px;
-  --grid-items: 4;
+  --card-gap: 80px;
+  --grid-items: 3;
   --main-font: "Montserrat", sans-serif;
   --second-font: "Seymour One", sans-serif;
   --third-font: "DM Sans", sans-serif;
@@ -51,8 +51,25 @@ body {
   height: auto;
 }
 
+.list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .grid {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+
+.grid-item {
+  -ms-flex-preferred-size: calc((100% - var(--card-gap) * (var(--grid-items) - 1)) / var(--grid-items));
+      flex-basis: calc((100% - var(--card-gap) * (var(--grid-items) - 1)) / var(--grid-items));
 }
 
 .container {
@@ -935,6 +952,7 @@ p {
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .about__decoration::after {
     background-image: url(../img/icons/about/about-mb@2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -948,6 +966,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .about__decoration::after {
     background-image: url(../img/icons/about/about-tb@2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -961,6 +980,7 @@ p {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .about__decoration::after {
     background-image: url(../img/icons/about/about-dt@2x.png);
+    background-size: contain;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1056,19 +1076,7 @@ p {
 }
 @media screen and (min-width: 480px) {
   .advantages {
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 80px;
+    padding-bottom: 178px;
   }
 }
 
@@ -1077,42 +1085,9 @@ p {
     margin-bottom: 22px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .advantages__item:not(:last-child) {
     margin-bottom: 32px;
-  }
-}
-
-.advantages__icon-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-}
-@media screen and (max-width: 479px) {
-  .advantages__icon-block {
-    margin-bottom: 16px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages__icon-block {
-    margin-bottom: 12px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__icon-block {
-    margin-bottom: 40px;
   }
 }
 
@@ -1150,6 +1125,56 @@ p {
     letter-spacing: 2.32px;
   }
 }
+.advantages__item .advantages__quantity::before {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.advantages__item:nth-child(1) .advantages__quantity::before {
+  content: "";
+  background-image: url(../img/icons/advanteges/cow.png);
+}
+.advantages__item:nth-child(2) .advantages__quantity::before {
+  content: "";
+  background-image: url(../img/icons/advanteges/weight.png);
+}
+.advantages__item:nth-child(3) .advantages__quantity::before {
+  content: "";
+  background-image: url(../img/icons/advanteges/ice-cream.png);
+}
+.advantages__quantity::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .advantages__quantity::before {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__quantity::before {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__quantity::before {
+    margin-bottom: 40px;
+  }
+}
 
 .advantages__text {
   margin-right: auto;
@@ -1182,52 +1207,11 @@ p {
 
 /* Галерея */
 .gallery {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .gallery {
-    display: block;
-  }
-}
-
-.gallery__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
-.gallery__item {
-  position: relative;
-  z-index: 1;
-  --grid-items: 3;
-}
-
-.gallery__text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  min-height: 70px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--gallary-background);
-  color: var(--background-color-1);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  text-align: center;
+  background-color: var(--background-color-main);
+  background-image: url(/img/background/background-dt.svg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .products {

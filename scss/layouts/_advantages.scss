@@ -7,15 +7,7 @@
     padding-bottom: 70px;
   }
   @media screen and (min-width: 480px) {
-    padding-bottom: 80px;
-  }
-}
-
-.advantages__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+    padding-bottom: 178px;
   }
 }
 
@@ -24,34 +16,9 @@
     @media screen and (max-width: 479px) {
       margin-bottom: 22px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
       margin-bottom: 32px;
     }
-  }
-}
-
-.advantages__icon-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-right: auto;
-  margin-left: auto;
-
-  border-radius: 50%;
-
-  background-color: var(--accent-color);
-
-  @media screen and (max-width: 479px) {
-    margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 12px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
   }
 }
 
@@ -83,6 +50,49 @@
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     letter-spacing: 2.32px;
+  }
+  .advantages__item &::before {
+    content: '';
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .advantages__item:nth-child(1) &::before {
+    content: '';
+    background-image: url(../img/icons/advanteges/cow.png);
+  }
+  .advantages__item:nth-child(2) &::before {
+    content: '';
+    background-image: url(../img/icons/advanteges/weight.png);
+  }
+  .advantages__item:nth-child(3) &::before {
+    content: '';
+    background-image: url(../img/icons/advanteges/ice-cream.png);
+  }
+
+  &::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 50%;
+
+    background-color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
 }
 

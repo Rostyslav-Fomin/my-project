@@ -277,37 +277,75 @@
       <!-- Advantages -->
       <section class="advantages">
         <h2 class="advanteges__title tittle visually-hidden">Our advanteges</h2>
-        <ul class="advantages__list list">
-            <li class="advantages__item">
-              <div class="advantages__icon-block">
-                <svg class="advantages__icon" width="36" height="36">
-                <use href="./img/sprite.svg#cow"></use>
-              </svg>
-              </div>
+        <ul class="advantages__list list grid">
+            <li class="advantages__item grid-item">
               <b class="advantages__quantity">721</b>
               <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__icon-block">
-                <svg class="advantages__icon" width="36" height="36">
-                <use href="./img/sprite.svg#weight"></use>
-              </svg>
+            <li class="advantages__item grid-item">
               </div>
               <b class="advantages__quantity">16KG</b>
               <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__icon-block">
-                <svg class="advantages__icon" width="36" height="36">
-                <use href="./img/sprite.svg#ice-cream"></use>
-              </svg>
-              </div>
+            <li class="advantages__item grid-item">
               <b class="advantages__quantity">84</b>
               <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
           </ul>
       </section>
-      
+      <!-- Gallery -->
+      <section class="gallery">
+        <div class="container">
+<h2 class="gallery__tittle tittle visually-hidden">Our gallery</h2>
+  <ul class="gallery__list list">
+    <li class="gallery item">
+      <picture>
+        <!-- images for desktops -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/gallery/gallery-slider-first-dt.jpg    1x,
+                    ./img/gallery/gallery-slider-first-dt@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- defoult image -->
+                  <img src="./img/gallery/gallery-slider-first-dt.jpg" alt="ice-creams with different ingredients and bluebarry" width="704" height="327">
+      </picture>
+    </li>
+    <li class="gallery item">
+      <picture>
+        <!-- images for desktops -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/gallery/gallery-slider-second-dt.jpg    1x,
+                    ./img/gallery/gallery-slider-second-dt@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- defoult image -->
+                    <img src="./img/gallery/gallery-slider-second-dt.jpg" alt="ice cream with sprinkles" width="704" height="327">
+      </picture>
+    </li>
+    <li class="gallery item">
+      <picture>
+        <!-- images for desktops -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/gallery/gallery-slider-third-dt.jpg    1x,
+                    ./img/gallery/gallery-slider-third-dt@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- defoult image -->
+      <img src="./img/gallery/gallery-slider-third-dt.jpg" alt="pink ice-creams with cherry" width="704" height="327">
+      </picture>
+    </li>
+  </ul>
+        </div>
+      </section>
       <!-- <section class="gallery section">
         <div class="container">
           <h2 class="section-tittle">Чим ми займаємося</h2>
