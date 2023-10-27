@@ -939,12 +939,12 @@ p {
     top: 22px;
     width: 278px;
     height: 278px;
-    background-image: url(/img/icons/about/about-mb.png);
+    background-image: url(./img/icons/about/about-mb.png);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .about__decoration::after {
-    background-image: url(/img/icons/about/about-mb@2x.png);
+    background-image: url(./img/icons/about/about-mb@2x.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -952,12 +952,12 @@ p {
     top: 26px;
     width: 330px;
     height: 330px;
-    background-image: url(/img/icons/about/about-tb.png);
+    background-image: url(./img/icons/about/about-tb.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .about__decoration::after {
-    background-image: url(/img/icons/about/about-tb@2x.png);
+    background-image: url(./img/icons/about/about-tb@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -965,12 +965,12 @@ p {
     top: 39px;
     width: 490px;
     height: 490px;
-    background-image: url(/img/icons/about/about-dt.png);
+    background-image: url(./img/icons/about/about-dt.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .about__decoration::after {
-    background-image: url(/img/icons/about/about-dt@2x.png);
+    background-image: url(./img/icons/about/about-dt@2x.png);
   }
 }
 @media screen and (max-width: 767px) {
